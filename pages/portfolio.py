@@ -3,7 +3,7 @@ from fpdf import FPDF
 import google.generativeai as genai
 
 # API Key
-GOOGLE_API_KEY = "AIzaSyCXXp_u1sF4iUMOFRw9nyGfVS0CnzvwKXs"  
+GOOGLE_API_KEY = "AIzaSyBLJdEwaVJX61b63tLxgiFGtYsaWa4C38Q"  
 genai.configure(api_key=GOOGLE_API_KEY)
 
 # Streamlit Page Setup
@@ -138,3 +138,4 @@ if st.button("Generate Portfolio PDF"):
         st.success("Portfolio generated successfully!")
         st.subheader("Preview (Text Version)")
         st.text(ai_portfolio_text)
+
